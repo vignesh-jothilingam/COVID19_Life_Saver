@@ -96,7 +96,7 @@ while True:
 		(startX, startY, endX, endY) = box
 		(mask, withoutMask) = pred
 		label = "Mask" if mask > withoutMask else "No Mask"
-		color = (100, 23, 10) if label == "Mask" else (0, 0, 255)
+		color = (135, 206, 235) if label == "Mask" else (0, 0, 255)
 		if (withoutMask*100) > 80:
 			i_faces += 1
 			s = r'.\{}.jpg'.format(cur_path,str(i_faces))
